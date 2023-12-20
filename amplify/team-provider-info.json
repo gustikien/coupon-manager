@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-couponmanager-dev-180516-authRole",
+      "UnauthRoleArn": "arn:aws:iam::732524697746:role/amplify-couponmanager-dev-180516-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::732524697746:role/amplify-couponmanager-dev-180516-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-couponmanager-dev-180516-deployment",
+      "UnauthRoleName": "amplify-couponmanager-dev-180516-unauthRole",
+      "StackName": "amplify-couponmanager-dev-180516",
+      "StackId": "arn:aws:cloudformation:us-east-1:732524697746:stack/amplify-couponmanager-dev-180516/7bd9a900-9f7b-11ee-8ed4-12ae67937fcd",
+      "AmplifyAppId": "d2uj8yq9kt8jof"
+    }
+  }
+}
