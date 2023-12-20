@@ -7,6 +7,7 @@ const MYSQL_CONFIG = {
     user: "admin",
     password: "C2o0u2P3oN",
     port: 3306,
+    timeout: 60000
 };
 
 const connection = mysql.createConnection(MYSQL_CONFIG);
