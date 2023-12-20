@@ -2,14 +2,14 @@ const mysql = require('mysql');
 const util = require('util');
 
 const MYSQL_CONFIG = {
-    host: process.env.MYSQL_HOST,
-    database: process.env.MYSQL_DATABASE,
-    user: process.env.MYSQL_USERNAME,
-    password: process.env.MYSQL_PASSWORD,
-    ...(process.env.MYSQL_PORT && { port: process.env.MYSQL_PORT }),
+    host: "hbpcoupon.c2mifuccy61r.us-east-1.rds.amazonaws.com",
+    database: "hbpcoupon",
+    user: "admin",
+    password: "C2o0u2P3oN",
+    port: 3306,
 };
 
-const connection = mysql.createConnection(process.env.CLEARDB_DATABASE_URL ? process.env.CLEARDB_DATABASE_URL : MYSQL_CONFIG);
+const connection = mysql.createConnection(MYSQL_CONFIG);
 const query = util.promisify(connection.query.bind(connection));
 
 const usersCreate = query('CREATE TABLE `users` (\n' +
