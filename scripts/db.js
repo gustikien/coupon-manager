@@ -11,6 +11,14 @@ const MYSQL_CONFIG = {
 };
 
 const connection = mysql.createConnection(MYSQL_CONFIG);
+connection.connect(function(err) {
+    if (err) {
+      console.error('Database connection failed: ' + err.stack);
+      return;
+    }
+  
+    console.log('Connected to database.');
+  });
 const query = util.promisify(connection.query.bind(connection));
 
 const usersCreate = query('CREATE TABLE `users` (\n' +
